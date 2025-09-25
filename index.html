@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - API</title>
+</head>
+<body>
+    <input 
+        type="number" 
+        name="id-personagem" 
+        id="id-personagem" 
+        placeholder="Insira o ID do personagem"
+        style="width: 30%;"
+    >
+    <button 
+        type="button"
+        onclick="buscarPersonagemPorID()"    
+    >Buscar</button>
+
+    <div class="personagem">
+        <img 
+            src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg" 
+            alt="carregando..."
+            id="foto-personagem"
+            style="width: 15%; margin-top: 2%;"
+        >
+
+        <p>Nome:</p>
+        <input type="text" name="nome-personagem" id="nome-personagem" disabled>
+
+        <p>Origem:</p>
+        <input type="text" name="origem-personagem" id="origem-personagem" disabled>
+        <p>Espécie:</p>
+        <input type="text" name="especie-personagem" id="especie-personagem" disabled>
+        <p>Gênero:</p>
+        <input type="text" name="genero-personagem" id="genero-personagem" disabled>
+        <p>Status:</p>
+        <input type="text" name="status-personagem" id="status-personagem" disabled>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
